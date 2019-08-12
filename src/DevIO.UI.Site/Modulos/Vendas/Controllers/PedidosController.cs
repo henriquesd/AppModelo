@@ -4,10 +4,10 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
-namespace DevIO.UI.Site.Areas.Produtos.Controllers
+namespace DevIO.UI.Site.Modulos.Vendas.Controllers
 {
-    [Area("Produtos")]
-    public class CadastroController : Controller
+    [Area("Vendas")]
+    public class PedidosController : Controller
     {
         public IActionResult Index()
         {
