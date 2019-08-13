@@ -1,1 +1,13 @@
-﻿Ola!
+﻿@using DevIO.UI.Site.Data
+@inject IPedidoRepository PedidoRepository
+
+Ola!
+
+@PedidoRepository.ObterPedido().Id
+
+
+@* Não é recomendado injetar dependências na View;
+    É melhor passar os dados via modelo; por exemplo, popule um modelo Pedido
+    no Index do Controller e repasse esse modelo como dado da View - a View
+    não precisaria então acessar o repositório, ela teria uma model do tipo Pedido
+    para escrever na tela aquilo que fosse necessário; *@
