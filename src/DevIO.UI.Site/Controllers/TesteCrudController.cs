@@ -40,7 +40,7 @@ namespace DevIO.UI.Site.Controllers
             _contexto.Alunos.Remove(aluno); // o método remove é feito sempre através da entidade, e não pelo Id;
             _contexto.SaveChanges();
 
-            return View();
+            return View("_Layout");
         }
     }
 }
